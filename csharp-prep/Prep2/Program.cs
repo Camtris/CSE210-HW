@@ -67,7 +67,6 @@ class Program
             sign = "";
         }
 
-
         // Next we are printing off all the information the student gave us
         Console.WriteLine($"Your grade is {letter}{sign}");
         Console.WriteLine($"{notification}");
