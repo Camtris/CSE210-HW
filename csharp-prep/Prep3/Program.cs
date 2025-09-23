@@ -23,11 +23,7 @@ class Program
             {
                 Console.WriteLine($"{guessNum} is too high");
             }
-
-
-
         } while (guessNum != random);
         Console.WriteLine("Congrats you guessed the number");
     }
 }
-
