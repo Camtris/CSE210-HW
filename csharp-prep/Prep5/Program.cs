@@ -28,8 +28,9 @@ class Program
 
     static int SquareNumber(int num)
     {
-        num = num * num;
-        return num;
+        int squaredNum;
+        squaredNum = num * num;
+        return squaredNum;
     }
     static void DisplayResults(string userName, int num, int year)
     {
@@ -48,6 +49,5 @@ class Program
         PromptUserNumber(out favNum);
         PromptUserBirthYear(out birthYear);
         DisplayResults(userName, favNum, birthYear);
-
     }
 }
