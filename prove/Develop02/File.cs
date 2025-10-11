@@ -1,6 +1,7 @@
 class File
 {
     public string _fileName;
+
     public void Save(List<string> list)
     {
         Console.WriteLine("What file would you like to save your journal to? ");
@@ -19,6 +20,7 @@ class File
         Console.WriteLine("What is the name of the file you would like to load? ");
         _fileName = Console.ReadLine();
         string[] entries = System.IO.File.ReadAllLines(_fileName);
+        list.Clear();
 
         foreach (string entry in entries)
         {

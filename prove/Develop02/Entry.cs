@@ -17,14 +17,15 @@ class Entry
     {
         "It's national ____ day (Ex: national ice cream day)",
         "What celebrity's birthday is it today?",
-        "What movie came out on this day?",
+        "At any time in history what movie was released on this day?",
         "What college sports team is ranked #1?",
-        "What is the #1 Billboard 100 song?"
+        "What is the #1 Billboard 100 song currently?",
     };
     public string _date;
     public string _journalEntry;
     public string _prompt;
     public string _userResponse;
+
     public List<string> Write(List<string> list)
     {
         Random random = new();
@@ -47,6 +48,7 @@ class Entry
         Console.WriteLine("------------------------------------------------------------------");
         Console.WriteLine($"{_date}: {_prompt}");
         _userResponse = Console.ReadLine();
+        Console.WriteLine();
         _journalEntry = _date + ": " + _prompt + "\n" + _userResponse + "\n";
         list.Add(_journalEntry);
         return list;

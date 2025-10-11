@@ -4,6 +4,7 @@ using System.Diagnostics;
 class Program
 {
     public List<string> _journalList = new();
+
     static void Main(string[] args)
     {
         Entry entry = new();
