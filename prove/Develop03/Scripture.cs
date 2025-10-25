@@ -8,6 +8,7 @@ class Scripture
     private int _displayCount;
     private Reference _reference;
 
+    // Constructor
     public Scripture(Reference reference, string verse)
     {
         _reference = reference;
@@ -15,12 +16,13 @@ class Scripture
         _displayCount = 0;
         _verse = verse;
         string[] verseWords = verse.Split(" ");
-        foreach(string word in verseWords)
+        foreach (string word in verseWords)
         {
             _verseList.Add(new Word(word));
             _displayCount += 1;
         }
     }
+    // Getters
     public string GetVerse()
     {
         return _verse;
@@ -29,7 +31,7 @@ class Scripture
     {
         return _displayCount;
     }
-
+    // Allows the verse to be changed and returned
     public string ChangeVerse()
     {
         bool repeat = true;
@@ -38,19 +40,21 @@ class Scripture
 
         Random random = new();
 
+        // Creates an exit condition for the loop to end
         if (_displayCount > 0)
         {
             while (repeat == true)
             {
+                // Getting a random index to be hidden
                 len = _verseList.Count();
                 i = random.Next(len);
 
-
-
-                if (_verseList[i].GetWord() == new string('-', _verseList[i].GetWord().Length))
+                // If the word is already hidden then we will restart the loop and get a new index
+                if (_verseList[i].GetWord() == new string('_', _verseList[i].GetWord().Length))
                 {
                     repeat = true;
                 }
+                // If the word isn't hidden then we will hide it and end the loop
                 else
                 {
                     _verseList[i].HideWord();
@@ -60,6 +64,7 @@ class Scripture
             }
         }
 
+        // With the new hidden word we need to update our verse string to be able to display the change
         _verse = "";
         foreach (Word word in _verseList)
         {
@@ -68,6 +73,7 @@ class Scripture
         _verse.Trim();
         return _verse;
     }
+    // Displays our reference and verse together
     public void Display()
     {
         Console.WriteLine($"{_reference.GetReference()} {_verse}");

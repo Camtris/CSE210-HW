@@ -5,6 +5,7 @@ class Reference
     private int _startVerse;
     private int _endVerse;
 
+    // Constructors
     public Reference(string book, int chapter, int startVerse)
     {
         _book = book;
@@ -18,6 +19,8 @@ class Reference
         _startVerse = startVerse;
         _endVerse = endVerse;
     }
+
+    // Gets the reference and decides if it needs to be formatted with an end verse.
     public string GetReference()
     {
         if (_endVerse != 0)
