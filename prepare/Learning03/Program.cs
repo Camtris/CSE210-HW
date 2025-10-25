@@ -1,9 +1,11 @@
 using System;
+using System.Data;
 
 class Program
 {
     static void Main(string[] args)
     {
+        test test = new();
         Fraction oneFraction = new Fraction();
         Fraction fiveFraction = new Fraction(5);
         Fraction threeFraction = new Fraction(3, 4);
@@ -22,5 +24,6 @@ class Program
         oneFraction.SetBottom(3);
         Console.WriteLine($"{oneFraction.GetTop()} / {oneFraction.GetBottom()}");
         Console.WriteLine($"{oneFraction.GetDecimalValue()}");
+
     }
 }
