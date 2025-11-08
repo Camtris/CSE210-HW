@@ -14,7 +14,7 @@ class Program
 
         Console.WriteLine("Welcome to your personal journal!");
 
-        while (userInput != 5)
+        while (userInput.GetInput() != 5)
         {
             Console.WriteLine("Menu");
             Console.WriteLine("1. Write");
