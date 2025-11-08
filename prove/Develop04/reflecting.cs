@@ -15,7 +15,7 @@ class Reflecting : Activity
     {"What strengths did you learn you had from that experience?",
      "What has that experience helped you to accomplish today?",
      "How did you show resilience?",
-     "After going through that experience what would you like you to tell your past self?",
+     "After going through that experience what would you like to tell your past self?",
      "How has that experience molded who you've become today?",
      "If you could summarize that experience into a motto what would it be?",
      "How did Heavenly Father help you through this experience?",

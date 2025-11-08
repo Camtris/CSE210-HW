@@ -6,7 +6,7 @@ class Listing : Activity
     {"How have you seen the Lord's hand in your life?",
      "What was something nice that someone did for you today?",
      "How have you felt God's love lately?",
-     "Count as many blessing as you can recognize",
+     "What are you grateful for?",
      "What are somethings that made you happy today?",
      "What spiritual activities have you done lately?",
     };
