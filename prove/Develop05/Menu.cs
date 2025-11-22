@@ -72,7 +72,6 @@ class Menu
             _goals.RemoveAt(userInput - 1);
         }
     }
-
     public void Display()
     {
         bool state = true;

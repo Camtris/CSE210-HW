@@ -4,7 +4,6 @@ class EternalGoal : Goal
 {
     public EternalGoal(string type, string name, string description, int pts, bool done) : base(type, name, description, pts, done)
     {
-        
     }
     public override void CreateGoal()
     {

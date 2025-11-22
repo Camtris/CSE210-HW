@@ -1,2 +1,2 @@
-100
-SimpleGoal,Go to bed early,Be in bed before 9:30pm,50,False
+800
+ChecklistGoal,hello,bye,3,3,100,500,True

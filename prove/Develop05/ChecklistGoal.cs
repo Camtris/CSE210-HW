@@ -3,7 +3,6 @@
         private int _counter;
         private int _bonusPts;
         private int _tick;
-
         public ChecklistGoal(string type, string name, string description, int tick, int counter, int pts, int bonusPts, bool done) : base(type, name, description, pts, done)
         {
             _tick = tick;
@@ -43,7 +42,6 @@
             Console.WriteLine("How many points would you like your bonus to be");
             SetBonus(int.Parse(Console.ReadLine()));
         }
-
         public override void Record()
         {
             _tick += 1;

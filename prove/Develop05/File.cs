@@ -29,7 +29,6 @@ class File
     public int Load(List<Goal> list)
     {
         int total;
-
         Console.WriteLine("What file would you like to load from ");
         string fileName = Console.ReadLine();
         using (StreamReader file = new StreamReader(fileName))
