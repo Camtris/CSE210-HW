@@ -1,0 +1,2 @@
+100
+SimpleGoal,Go to bed early,Be in bed before 9:30pm,50,False
